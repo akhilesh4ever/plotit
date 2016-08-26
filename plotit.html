@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Plot it test page</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap-theme.min.css" >
+    <script>
+        $=jquery=require('./node_modules/jquery/dist/jquery.min');
+    </script>
+</head>
+<body>
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-2">
+            <button id="MRight">Measure to Right</button>
+        </div>
+        <div class="col-md-2">
+            <button id="MLeft">Measure to Left</button>
+        </div>
+        <div class="col-md-2">
+            <button id="MFront">Measure to Front</button>
+        </div>
+        <div class="col-md-2">
+            <button id="MBack">Measure to Back</button>
+        </div>
+        <div class="col-md-2">
+            <button id="Restart">Restart</button>
+        </div>
+        <div class="col-md-2">
+            <button id="Done">Done</button>
+        </div>
+    </div>
+    <div class="row">
+        <canvas id="plotitCanvas" width="1600" height="1200"></canvas>
+    </div>
+</div>
+</div>
+</body>
+<script src="./node_modules/fabric/dist/fabric.js"></script>
+<script>
+    require('./app.js');
+</script>
+
+</body>
+</html>
